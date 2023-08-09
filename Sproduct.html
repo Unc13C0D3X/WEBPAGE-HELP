@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device=width, initial=scake=1.0">
+    <title>HappyFeet</title>
+    <link rel="stylesheet" href="./product.css">
+</head>
+
+<!--ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc-->
+<!--Home Page code-->
+<body>
+  
+    <header> <!--the header covers whole page because of settings in css file of header(width,height)-->
+          <nav class="navbar">
+        <h1 class="logo">HappyFeet</h1>
+        <ul class="nav-links">
+           <li><a href="#"></a>Home</li>
+           <li><a href="#"></a>Catalog</li>
+           <li><a href="#"></a>About</li>
+           <li class="ctn"><a href="#"></a>Contact</li>
+        </ul>
+          </nav>
+        <div class="row">
+            <div class="col-1">
+                <h1>Air Jordan 4</h1> 
+                <h2>EM Retro Carhartt</h2>
+                   
+                <p>Produced in extremely limited quantities,<br>Locked away in an aether,<br> Lose Yourself in these EM Retroz</p>
+                <h3>R4500</h3>
+                <button type="button">ADD TO CART</button>
+            </div>
+            <div class="col-2">
+                <div class="feature-img">
+                    <img src="em-shoez.png">
+                </div>
+            </div>
+        </div>
+        <img src="./menu =btn.png " alt="" class="menu-btn">
+       </nav>
+       
+    </header>
+
+
+<!--ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc-->
+<!--ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc-->
+<!--ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc-->
+
+<!--ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc-->
+
+    <!--code for the footer-->
+    <section class="footer">
+    <p>8 Power Street, Bellvile, Cape Town, 7493, RSA -- Phone: +27 645 434 4342 ---</p>
+    <p>Copyright @ 2023 HappyFeet</p>
+    </section>
+    <script>
+        const menubtn = document.querySelector(".menu-btn")
+        const navlinks = document.querySelector(".nav-links")
+menubtn.addEventListener('click',()=>{
+    navlinks.classList.toggle('mobile-menu')
+})
+
+    </script>
+</body>

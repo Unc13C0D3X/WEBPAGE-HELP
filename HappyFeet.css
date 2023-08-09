@@ -1,0 +1,304 @@
+   /*declaration code, to clear page before coding*/
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        box-sizing: border-box;
+    }
+    a{
+        text-decoration: none;
+
+    }
+    ul{
+        list-style: none;
+    }
+    .active{
+          color: palevioletred;
+          text-decoration: underline;
+          font-weight: bold;
+    }
+
+/*code for removing bottom scrolbar*/
+    body , html{
+        overflow-x: hidden;
+    }
+
+/*code for navigation bar*/
+    .navbar {         
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        width: 100%;    
+        justify-content: space-between;
+        padding: 20px;
+        color: whitesmoke;
+    }
+    .nav-links{      /*editing the links in the bar*/
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    .nav-links li{
+        margin: 0 30px;
+    }
+
+
+/*cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc*/
+
+/*code for the header, along with its content, notice the .header-contnt .line etc are codes for classes within HEADER*/
+    header{
+        width: 100vw;
+        height: 100vh;
+        background-image: url(backgrnd.jpeg); 
+        background-position: bottom;
+        background-size: cover;
+        display: flex;
+        align-items:flex-end;
+        justify-content: center;
+    }
+    .header-content {
+        margin-bottom: 150px;
+        text-align: center;
+        color: aliceblue;
+    }
+    .header-content h2{
+        font-size: 4vmin; 
+        font-family: times;
+    }
+    .line {             /*underlines h2, see link in html underheader*/
+        width: 150px;
+        height: 4px;
+        background-color: rgb(224, 204, 17);
+        margin: 10px auto;
+        border-radius: 5px;
+    }
+    .header-content h1{
+        font-family:'Times New Roman', Times, serif;
+        font-size: 7vmin;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .ctn{                                 /*for yellow circle around Learn More button*/
+        padding: 8px 15px;
+        background-color: rgb(160, 147, 33);
+        border-radius: 30px;
+        color: whitesmoke;
+    }  
+    .menu-btn {                            /*for 3-stroke pulldown menu btn*/
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 40px;
+        cursor: pointer;
+        display: none;
+    }
+/*ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc*/
+
+
+/*for new releases*/
+    section{     /* this section covers for all sections, from here from whatever class as long as under section use ".class-name" when coding*/
+        width: 80 ;
+        margin: 80px auto;  
+    }
+    .title {
+        text-align: center;
+        color: rgb(32, 32, 44);
+        font-family: times;
+        font-size: 4vmin;
+    }
+    .row {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content:space-around;
+    }
+    .row .col {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .NewReleases .row {
+        margin-top: 50px;
+    }
+    h4{
+        font-size: 3vmin;
+        color: blue;
+        margin: 20px auto;
+    }
+    p{
+        color: blue;
+        padding:0px 40px ;
+    }
+    .NewReleases .ctn{
+        margin-top: 30px;
+    }
+
+/*ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc*/
+    /*since class Sales falls under section tag, use .Sale to code for sale page and its contents*/
+    .Sale {
+        width: 100%;
+        height: 80vh;
+        background-image: url(background.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+    }
+    .sale-content{
+        width: 60%;
+        padding: 50px; 
+        color: whitesmoke; 
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .sale-content h1{
+        font-size: 7vmin;
+    }
+    .sale-content p{
+        color: whitesmoke;
+    }  
+    .sale-content .ctn {
+        margin-top: 40px;
+    }
+    .sale-content .line{
+        margin-bottom: 50px;
+    }
+
+/*cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc*/
+    /*Exclusives page code*/
+    .content-col{
+        width: 40%;
+    }
+    .image-col{
+        width: 60%;
+    }
+    .exclusives .image-gallery{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+    }
+    .image-gallery img{
+        width: 300px;
+        margin: 10px;
+    }
+    .content-col h1{
+        font-size: 7vmin;
+        color: blue;
+    }
+    .content-col .line{
+        margin-left: -1px;
+    }
+    .content-col p{
+        padding: 0;
+        margin: 30px auto;
+    }
+    .content-col .ctn{
+        margin-left: -100px;
+    }
+    @media only screen and (min-width:850px){
+        .row::-webkit-scrollbar{
+        display: none;
+        }
+        .row{
+            flex-direction: row;
+            margin-left: 1rem;
+            padding-bottom: 1rem;
+            overflow:auto;
+        }
+        .row .col{
+            margin-right: 1rem;
+            margin-left: 1rem;
+        }
+        .col img{
+            max-width: 15rem;
+        }
+    }
+/*cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc*/
+    /*code for the footer*/
+    .footer{
+        width: 100%;
+        min-height: 100px;
+        padding: 20px 80px;
+        margin: 0;
+        background: rgb(31, 31, 41);
+        text-align: center;
+    }
+    .footer p{
+        color: whitesmoke;
+        margin: 20px auto;
+    }
+
+/*cccccccccccccccccccccccccccccccccCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCcccccccccccccccccccccccccccccccccccccccccccc*/
+
+/*code for bigger screens*/
+@media only screen and (min-width: 850px){
+    .row{
+        flex-direction: row;
+    }
+    .row .col{
+        margin: 20px auto;
+    }
+    .col img{
+        max-width: 20rem;
+    }
+}
+
+/*cccccccccccccccccccccccccccccccccCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCcccccccccccccccccccccccccccccccccccccccccccc*/
+
+/*mobile device code*/
+@media only screen and (max-width:850px){
+    .menu-btn{
+        display: block;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: rgb(88, 88, 151);
+        margin-top: -900px;
+        transition: 0.5s ease;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-right-radius: 25%;
+    }
+    .nav-links li{
+        margin: 30px auto;
+    }
+
+/*ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc*/
+
+/*sale*/
+    .row{
+        flex-direction: column;
+    }
+    .row .col{  
+        margin: 20px auto;
+    }
+    .col img{
+        max-width: 90%;
+    }
+/*ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc*/
+    /*exclusives-add code*/
+}
+img{
+    transition: transform .3s ease;
+}
+img:hover{
+    transform: scale(1.1);
+}
+
+
+/*ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc*/
